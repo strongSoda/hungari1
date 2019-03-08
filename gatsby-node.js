@@ -1,8 +1,14 @@
 const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
+// initialising filepath to use filesystem as raw database.
 const { createFilePath } = require('gatsby-source-filesystem')
 
+/**
+ * -------------------------------------------------------------------
+ * Migrating the data imported from filesystem to GraphQl 
+ * -------------------------------------------------------Imran Khan--
+ */
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 

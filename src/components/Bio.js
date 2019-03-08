@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 // Import typefaces
 import 'typeface-montserrat'
@@ -27,11 +27,7 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Written by <strong>Kyle Mathews</strong> who lives and works in San
-          Francisco building useful things.{' '}
-          <a href="https://twitter.com/kylemathews">
-            You should follow him on Twitter
-          </a>
+          Written by <strong>Imran Khan</strong> who lives and works in India building useful things.{' '}
         </p>
       </div>
     )

@@ -23,6 +23,7 @@ class BlogIndex extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}/>
 
+        {/* Iterating through each post using map method */}
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug;
           var image = get(node, 'frontmatter.image');
@@ -55,6 +56,7 @@ class BlogIndex extends React.Component {
 
 export default BlogIndex
 
+// querying the GraphQl database to fetch data
 export const pageQuery = graphql`
   query {
     site {
